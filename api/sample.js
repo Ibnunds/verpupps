@@ -8,7 +8,7 @@ async function sampleAPI() {
 
     await page.goto("https://www.freecodecamp.org/");
 
-    await page.screenshot({ path: "./" });
+    await page.screenshot({ path: "ss.png" });
 
     await browser.close();
   } catch (error) {
