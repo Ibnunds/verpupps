@@ -33,4 +33,4 @@ async function handler(request, response) {
   });
 }
 
-exports = handler;
+handler();
