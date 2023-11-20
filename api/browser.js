@@ -21,4 +21,4 @@ async function createBrowser() {
   return browser;
 }
 
-exports = createBrowser;
+module.exports = createBrowser;
