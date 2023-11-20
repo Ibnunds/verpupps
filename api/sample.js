@@ -4,7 +4,11 @@ async function sampleAPI() {
   try {
     const browser = await createBrowser();
 
+    const page = await browser.newPage();
+
     await page.goto("https://www.freecodecamp.org/");
+
+    await page.screenshot({ path: "./" });
 
     await browser.close();
   } catch (error) {
