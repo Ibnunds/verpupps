@@ -67,7 +67,7 @@ async function genCode(img) {
     let fileInputs = await page.$$('input[type="file"]');
     let input = fileInputs[fileInputs.length - 1];
 
-    await input.uploadFile("/tmp/tes.jpg");
+    await input.uploadFile("./saved.png");
 
     await page.click("#component-8");
 
