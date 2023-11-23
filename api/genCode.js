@@ -42,7 +42,7 @@ async function isAnswered(page) {
   //   }
 }
 
-async function genCode() {
+async function genCode(img) {
   const browser = await createBrowser();
 
   const pages = await browser.pages();
