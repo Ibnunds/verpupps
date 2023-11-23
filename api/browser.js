@@ -7,7 +7,7 @@ async function createBrowser() {
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" ||
       (await chromium.executablePath),
-    headless: false,
+    headless: true,
     defaultViewport: null,
     ignoreHTTPSErrors: true,
     args: [

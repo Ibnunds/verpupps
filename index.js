@@ -10,10 +10,10 @@ app.get("/", (req, res) => {
   res.send("Hi there v3");
 });
 
-app.get("/gen", async (req, res) => {
-  const { img } = req.query;
-  await genCode(img);
-  res.send("Gen API");
+app.post("/gen", async (req, res) => {
+  const { data } = req.body;
+  const bot = await genCode(data);
+  res.send(`Answer : ${bot}`);
 });
 
 app.post("/ti", async (req, res) => {
