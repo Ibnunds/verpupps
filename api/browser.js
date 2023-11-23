@@ -5,8 +5,10 @@ async function createBrowser() {
   const browser = await puppeteer.launch({
     args: chromium.args,
     executablePath:
-      process.env.CHROME_EXECUTABLE_PATH || (await chromium.executablePath),
-    headless: true,
+      "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" ||
+      (await chromium.executablePath),
+    headless: false,
+    defaultViewport: null,
     ignoreHTTPSErrors: true,
     args: [
       "--no-sandbox",

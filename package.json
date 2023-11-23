@@ -13,6 +13,7 @@
     "@sparticuz/chromium": "^92.0.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "jimp": "^0.22.10",
     "puppeteer-core": "10.0.0"
   }
 }
