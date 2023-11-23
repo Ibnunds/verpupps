@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Hi there v5");
+  res.send("Hi there v6");
 });
 
 app.post("/gen", async (req, res) => {

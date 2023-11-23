@@ -6,7 +6,7 @@ async function base64toblob(base64) {
   const buffer = Buffer.from(norm, "base64");
   Jimp.read(buffer, (err, res) => {
     if (err) throw new Error(err);
-    res.quality(8).write("resized.jpg");
+    res.quality(8).write("/tmp/tes.jpg");
   });
   //fs.writeFileSync("./saved.png", buffer);
 }

@@ -60,8 +60,6 @@ async function genCode(img) {
       waitUntil: "load",
     });
 
-    await page.waitFor(5000);
-
     // Wait until everything is loaded
     await page.waitForSelector("input[type='file']");
 
@@ -69,7 +67,7 @@ async function genCode(img) {
     let fileInputs = await page.$$('input[type="file"]');
     let input = fileInputs[fileInputs.length - 1];
 
-    await input.uploadFile("./resized.jpg");
+    await input.uploadFile("/tmp/tes.jpg");
 
     await page.click("#component-8");
 
