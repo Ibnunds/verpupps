@@ -1,11 +1,10 @@
 const express = require("express");
-const sampleAPI = require("./api/sample");
 const genCode = require("./api/genCode");
 const ti = require("./api/ti");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hi there");
+  res.send("Hi there v2");
 });
 
 app.get("/gen", async (req, res) => {
